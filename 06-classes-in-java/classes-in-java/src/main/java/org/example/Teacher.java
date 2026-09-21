@@ -6,8 +6,11 @@ package org.example;
 public class Teacher {
     // TODO: Add instance variables
     // firstName (String)
+    String firstName;
     // lastName (String)
+    String lastName;
     // subject (String)
+    String subject;
 
     // TODO: Implement correct code for getters/setters
     /**
@@ -16,7 +19,7 @@ public class Teacher {
      * @return first name of the teacher
      */
     public String getFirstName() {
-        return null;
+        return firstName;
     }
 
     /**
@@ -25,7 +28,7 @@ public class Teacher {
      * @param firstName first name of the teacher
      */
     public void setFirstName(String firstName) {
-
+        this.firstName = firstName;
     }
 
     /**
@@ -34,7 +37,7 @@ public class Teacher {
      * @return last name of the teacher
      */
     public String getLastName() {
-        return null;
+        return lastName;
     }
 
     /**
@@ -43,7 +46,7 @@ public class Teacher {
      * @param lastName last name of the teacher
      */
     public void setLastName(String lastName) {
-
+        this.lastName = lastName;
     }
 
     /**
@@ -52,7 +55,7 @@ public class Teacher {
      * @return subject taught by the teacher
      */
     public String getSubject() {
-        return null;
+        return subject;
     }
 
     /**
@@ -61,7 +64,7 @@ public class Teacher {
      * @param subject subject taught by the teacher
      */
     public void setSubject(String subject) {
-
+        this.subject = subject;
     }
 
     /**
@@ -73,6 +76,9 @@ public class Teacher {
      */
     public Teacher(String firstName, String lastName, String subject) {
         // TODO: Set instance variables
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.subject = subject;
     }
 
     /**
@@ -83,6 +89,6 @@ public class Teacher {
     public String toString() {
         // TODO: Return a string representation of the teacher in this format:
         // firstName lastName (subject)
-        return "NOT IMPLEMENTED";
+        return firstName + " " + lastName + " (" + subject + ")";
     }
 }
